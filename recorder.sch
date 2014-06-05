@@ -11230,7 +11230,7 @@ Source: 008-0260-0_E.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-111.76" y="182.88" size="1.778" layer="91">Sound Catcher Demo #1</text>
+<text x="-78.74" y="167.64" size="1.778" layer="91">Sound Catcher Demo #1</text>
 <text x="66.294" y="26.162" size="1.778" layer="91">Must be close to pins 17, 19 and 21.</text>
 <text x="-91.44" y="149.86" size="1.778" layer="91">AUXIN: What is the function? Is this essential if we are also using the MIC?</text>
 <text x="-73.66" y="25.4" size="1.778" layer="91">SPI Connections</text>
