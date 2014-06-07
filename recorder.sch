@@ -6043,41 +6043,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="DGND">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-2.667" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="DGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DGND" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="DGND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Electromechanical">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
@@ -11147,7 +11112,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C12" library="rcl" deviceset="C-US" device="C0402" value="0.1uF"/>
 <part name="C16" library="rcl" deviceset="C-US" device="C0402" value="27pF"/>
 <part name="C18" library="rcl" deviceset="C-US" device="C0402" value="27pF"/>
-<part name="SUPPLY4" library="supply2" deviceset="DGND" device=""/>
 <part name="C8" library="rcl" deviceset="C-US" device="C0402" value="0.1uF"/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0402" value="47uF"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0402" value="0.01uF"/>
@@ -11222,6 +11186,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11267,7 +11232,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C12" gate="G$1" x="53.34" y="170.18" rot="R90"/>
 <instance part="C16" gate="G$1" x="109.22" y="83.82"/>
 <instance part="C18" gate="G$1" x="129.54" y="83.82"/>
-<instance part="SUPPLY4" gate="G$1" x="33.02" y="30.48"/>
 <instance part="C8" gate="G$1" x="12.7" y="182.88" rot="R180"/>
 <instance part="C1" gate="G$1" x="-66.04" y="68.58"/>
 <instance part="C2" gate="G$1" x="-55.88" y="68.58"/>
@@ -11342,17 +11306,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND13" gate="1" x="109.22" y="73.66"/>
 <instance part="GND14" gate="1" x="129.54" y="73.66"/>
 <instance part="GND15" gate="1" x="149.86" y="73.66"/>
+<instance part="GND16" gate="1" x="33.02" y="30.48"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="DGND" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VSSD_PWM"/>
-<pinref part="SUPPLY4" gate="G$1" pin="DGND"/>
-<wire x1="33.02" y1="38.1" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="C18" gate="G$1" pin="1"/>
@@ -11467,7 +11425,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="83.82" y1="170.18" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="AUXOUT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AUXOUT"/>
 <wire x1="33.02" y1="124.46" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
@@ -11475,6 +11433,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="45.72" y1="137.16" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="170.18" x2="50.8" y2="170.18" width="0.1524" layer="91"/>
+<label x="32.512" y="127.762" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -11525,7 +11484,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="98.806" y="58.928" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="N$15" class="0">
 <segment>
 <pinref part="M1" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="200.66" x2="17.78" y2="195.58" width="0.1524" layer="91"/>
@@ -11623,7 +11582,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="30.48" y1="157.48" x2="22.86" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="157.48" x2="22.86" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<label x="36.576" y="165.862" size="1.778" layer="95"/>
+<label x="34.036" y="158.242" size="1.778" layer="95"/>
 <wire x1="40.64" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
 <junction x="30.48" y="157.48"/>
 </segment>
@@ -11788,7 +11747,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U1" gate="G$1" pin="AUDOUT"/>
 <wire x1="38.1" y1="124.46" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
-<label x="37.592" y="127.762" size="1.778" layer="95" rot="R90"/>
+<label x="37.592" y="125.222" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="111.76" y1="190.5" x2="134.62" y2="190.5" width="0.1524" layer="91"/>
@@ -11963,6 +11922,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VSSD_PWM"/>
+<wire x1="33.02" y1="38.1" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 </net>
 </nets>
