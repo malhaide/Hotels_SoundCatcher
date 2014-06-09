@@ -11166,7 +11166,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R14" library="rcl" deviceset="R-US_" device="R0402" value="80.6kohm"/>
 <part name="Q1" library="adafruit" deviceset="CRYSTAL" device="SM49" value="4.096MHz"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="AUDIO-JACK" device="SMD2"/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
@@ -11187,6 +11186,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
+<part name="JP8" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -11196,7 +11198,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-91.44" y="149.86" size="1.778" layer="91">AUXIN: What is the function? Is this essential if we are also using the MIC?</text>
 <text x="-73.66" y="25.4" size="1.778" layer="91">SPI Connections</text>
 <text x="106.68" y="223.52" size="1.778" layer="91">Is this redundant if we have a headphone jack? Should speaker be off-board or mounted to PCB?</text>
-<text x="-101.6" y="81.28" size="1.778" layer="91">Digital Side</text>
+<text x="-121.92" y="86.36" size="1.778" layer="91">Digital Side</text>
 <text x="30.48" y="-7.62" size="1.778" layer="91">Digital</text>
 <text x="193.04" y="88.9" size="1.778" layer="91">Digital</text>
 <text x="66.04" y="198.12" size="1.778" layer="91">Analog Side</text>
@@ -11286,7 +11288,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R14" gate="G$1" x="149.86" y="81.28" rot="R270"/>
 <instance part="Q1" gate="G$1" x="119.38" y="91.44"/>
 <instance part="JP4" gate="G$1" x="33.02" y="15.24" rot="R90"/>
-<instance part="JP3" gate="G$1" x="-45.72" y="88.9"/>
 <instance part="JP5" gate="G$1" x="104.14" y="127" rot="R180"/>
 <instance part="JP2" gate="G$1" x="-68.58" y="12.7"/>
 <instance part="JP7" gate="G$1" x="172.72" y="208.28" rot="R180"/>
@@ -11307,6 +11308,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND14" gate="1" x="129.54" y="73.66"/>
 <instance part="GND15" gate="1" x="149.86" y="73.66"/>
 <instance part="GND16" gate="1" x="33.02" y="30.48"/>
+<instance part="GND17" gate="1" x="-78.74" y="63.5"/>
+<instance part="JP3" gate="G$1" x="-76.2" y="88.9"/>
+<instance part="JP8" gate="G$1" x="-91.44" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -11403,18 +11407,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCCD"/>
-<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="73.66" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="73.66" x2="-66.04" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="73.66" x2="-66.04" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="71.12" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="71.12" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
 <label x="-40.386" y="73.914" size="1.778" layer="95"/>
-<junction x="-55.88" y="73.66"/>
 <junction x="-45.72" y="73.66"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="-66.04" y1="73.66" x2="-66.04" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="JP8" gate="G$1" pin="2"/>
+<wire x1="-66.04" y1="73.66" x2="-83.82" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-66.04" y="73.66"/>
+<junction x="-55.88" y="73.66"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -11512,38 +11519,38 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="SDI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="I2S_SDI/GPIO7"/>
-<wire x1="-40.64" y1="93.98" x2="-12.7" y2="93.98" width="0.1524" layer="91"/>
 <label x="-30.48" y="93.98" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="93.98" x2="-71.12" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
-<wire x1="-40.64" y1="91.44" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="91.44" x2="-33.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="91.44" x2="-43.18" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="I2S_SCK/GPIO6"/>
-<wire x1="-33.02" y1="88.9" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="88.9" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
 <label x="-30.48" y="88.9" size="1.778" layer="95"/>
+<wire x1="-43.18" y1="91.44" x2="-71.12" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="WS" class="0">
 <segment>
-<wire x1="-40.64" y1="88.9" x2="-35.56" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="88.9" x2="-35.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="88.9" x2="-53.34" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="I2S_WS/GPIO5"/>
-<wire x1="-35.56" y1="83.82" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="83.82" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
 <label x="-30.48" y="83.82" size="1.778" layer="95"/>
+<wire x1="-53.34" y1="88.9" x2="-71.12" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SDO" class="0">
 <segment>
-<wire x1="-40.64" y1="86.36" x2="-38.1" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="86.36" x2="-38.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="86.36" x2="-60.96" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="I2S_SDO/GPIO4"/>
-<wire x1="-38.1" y1="78.74" x2="-12.7" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="78.74" x2="-12.7" y2="78.74" width="0.1524" layer="91"/>
 <label x="-30.48" y="78.74" size="1.778" layer="95"/>
+<wire x1="-60.96" y1="86.36" x2="-71.12" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -11927,6 +11934,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U1" gate="G$1" pin="VSSD_PWM"/>
 <wire x1="33.02" y1="38.1" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="-83.82" y1="71.12" x2="-78.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="71.12" x2="-78.74" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
