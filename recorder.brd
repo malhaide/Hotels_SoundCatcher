@@ -134,7 +134,7 @@
 <text x="23.368" y="76.327" size="0.8128" layer="21" ratio="5">CP+B // Sound Catcher Rev 01
 Designed by Miran Alhaideri</text>
 <dimension x1="22.86" y1="39.37" x2="45.263" y2="39.37" x3="34.0615" y3="36.83" textsize="0.8128" textratio="5" layer="20"/>
-<dimension x1="22.86" y1="39.37" x2="22.86" y2="79.111" x3="19.05" y3="59.2405" textsize="0.8128" textratio="5" layer="20"/>
+<dimension x1="22.86" y1="39.37" x2="22.86" y2="80.381" x3="20.32" y3="59.8755" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="mirans_library">
@@ -1813,112 +1813,219 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="OC_NEWARK" value="unknown" x="26.035" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="26.035" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="26.035" y="29.21" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="27.332" y="65.494" size="1" layer="25"/>
+<attribute name="NAME" x="31.7262" y="61.8618" size="1" layer="25"/>
 <attribute name="VALUE" x="32.615" y="65.07" size="1" layer="27" rot="R270"/>
 </element>
-<element name="R8" library="rcl" package="R0201" value="10kohm" x="38.1" y="61.849" rot="R270">
+<element name="R8" library="rcl" package="R0201" value="10kohm" x="38.1" y="61.849" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="81C8514" x="-12.7" y="25.019" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="-12.7" y="25.019" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="-12.7" y="25.019" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="38.2778" y="61.3918" size="0.762" layer="25"/>
+<attribute name="VALUE" x="36.195" y="62.484" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R7" library="rcl" package="R0201" value="100ohm" x="35.941" y="70.866" rot="R180">
+<element name="R7" library="rcl" package="R0201" value="100ohm" x="35.941" y="70.866" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="81C8514" x="6.731" y="121.666" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="6.731" y="121.666" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="6.731" y="121.666" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.6682" y="71.4502" size="0.762" layer="25" rot="R180"/>
+<attribute name="VALUE" x="36.576" y="72.771" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R10" library="rcl" package="R0201" value="1Mohm" x="39.116" y="62.611" rot="R270">
+<element name="R10" library="rcl" package="R0201" value="1Mohm" x="39.116" y="62.611" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="81C8514" x="-11.684" y="2.921" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="-11.684" y="2.921" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="-11.684" y="2.921" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="37.7698" y="63.0936" size="0.762" layer="25"/>
+<attribute name="VALUE" x="37.211" y="63.246" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R6" library="rcl" package="R0201" value="4.7kohm" x="35.941" y="70.231" rot="R180">
+<element name="R6" library="rcl" package="R0201" value="4.7kohm" x="35.941" y="70.231" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="81C8514" x="6.731" y="115.951" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="6.731" y="115.951" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="6.731" y="115.951" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.6428" y="70.4088" size="0.762" layer="25" rot="R180"/>
+<attribute name="VALUE" x="36.576" y="72.136" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C9" library="rcl" package="C0402" value="0.1uF" x="37.5158" y="73.152" smashed="yes" rot="MR180">
-<attribute name="NAME" x="37.0078" y="72.644" size="0.8128" layer="26" rot="MR180"/>
+<attribute name="NAME" x="36.3982" y="74.5744" size="0.8128" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="36.8808" y="75.057" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="C5" library="rcl" package="C0402" value="0.1uF" x="27.9654" y="57.6834" rot="R270"/>
-<element name="C12" library="rcl" package="C0402" value="0.1uF" x="34.29" y="69.215"/>
-<element name="C16" library="rcl" package="C0402" value="27pF" x="39.878" y="64.897" rot="R90"/>
-<element name="C18" library="rcl" package="C0402" value="27pF" x="38.481" y="58.293" rot="R180"/>
-<element name="C8" library="rcl" package="C0402" value="0.1uF" x="33.655" y="70.485" rot="MR180"/>
-<element name="C2" library="rcl" package="C0402" value="0.01uF" x="27.7114" y="55.5498"/>
-<element name="C4" library="rcl" package="C0402" value="0.001uF" x="27.7114" y="54.0766"/>
-<element name="C13" library="rcl" package="C0402" value="0.1uF" x="34.544" y="71.374" rot="R90"/>
-<element name="C11" library="rcl" package="C0402" value="0.1uF" x="31.4198" y="70.3834" rot="R180"/>
-<element name="M1" library="microphon" package="WM-61A" value="ELECTRET_MICROPHON-WM-61A" x="39.116" y="77.216" rot="MR270"/>
-<element name="R4" library="rcl" package="R0201" value="1.5kohm" x="33.909" y="72.7964" rot="MR270">
+<element name="C5" library="rcl" package="C0402" value="0.1uF" x="27.9654" y="57.6834" smashed="yes" rot="R270">
+<attribute name="NAME" x="28.4226" y="58.674" size="1.016" layer="25" rot="R270"/>
+<attribute name="VALUE" x="26.0604" y="58.3184" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C12" library="rcl" package="C0402" value="0.1uF" x="34.29" y="69.215" smashed="yes">
+<attribute name="NAME" x="36.3474" y="68.707" size="0.762" layer="25" rot="R180"/>
+<attribute name="VALUE" x="33.655" y="67.31" size="1.27" layer="27"/>
+</element>
+<element name="C16" library="rcl" package="C0402" value="27pF" x="39.878" y="64.897" smashed="yes" rot="R90">
+<attribute name="NAME" x="42.926" y="66.1162" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="41.783" y="64.262" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C18" library="rcl" package="C0402" value="27pF" x="38.481" y="58.293" smashed="yes" rot="R180">
+<attribute name="NAME" x="39.4716" y="57.785" size="0.762" layer="25" rot="R180"/>
+<attribute name="VALUE" x="39.116" y="60.198" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C8" library="rcl" package="C0402" value="0.1uF" x="33.655" y="70.485" smashed="yes" rot="MR180">
+<attribute name="NAME" x="32.5882" y="69.9262" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="33.02" y="72.39" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C2" library="rcl" package="C0402" value="0.01uF" x="27.7114" y="55.5498" smashed="yes">
+<attribute name="NAME" x="28.7274" y="55.0926" size="1.016" layer="25"/>
+<attribute name="VALUE" x="27.0764" y="53.6448" size="1.27" layer="27"/>
+</element>
+<element name="C4" library="rcl" package="C0402" value="0.001uF" x="27.7114" y="54.0766" smashed="yes">
+<attribute name="NAME" x="28.702" y="53.6194" size="1.016" layer="25"/>
+<attribute name="VALUE" x="27.0764" y="52.1716" size="1.27" layer="27"/>
+</element>
+<element name="C13" library="rcl" package="C0402" value="0.1uF" x="34.544" y="71.374" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.1696" y="73.4822" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="36.449" y="70.739" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C11" library="rcl" package="C0402" value="0.1uF" x="31.4198" y="70.3834" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.4104" y="69.9262" size="0.762" layer="25"/>
+<attribute name="VALUE" x="32.0548" y="72.2884" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="M1" library="microphon" package="WM-61A" value="ELECTRET_MICROPHON-WM-61A" x="39.116" y="77.216" smashed="yes" rot="MR270">
+<attribute name="NAME" x="41.4528" y="79.9846" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="43.688" y="80.01" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R4" library="rcl" package="R0201" value="1.5kohm" x="33.909" y="72.7964" smashed="yes" rot="MR270">
 <attribute name="OC_NEWARK" value="81C8514" x="79.629" y="34.6964" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="79.629" y="34.6964" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="79.629" y="34.6964" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="34.0868" y="73.3552" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="35.814" y="73.4314" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C7" library="rcl" package="C0402" value="220uF" x="35.179" y="74.6506" rot="MR90"/>
-<element name="R3" library="rcl" package="R0201" value="1.5kohm" x="34.417" y="77.216" rot="MR90">
+<element name="C7" library="rcl" package="C0402" value="220uF" x="35.179" y="74.6506" smashed="yes" rot="MR90">
+<attribute name="NAME" x="36.068" y="78.0542" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="33.274" y="74.0156" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R3" library="rcl" package="R0201" value="1.5kohm" x="34.417" y="77.216" smashed="yes" rot="MR90">
 <attribute name="OC_NEWARK" value="81C8514" x="-11.303" y="124.206" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="-11.303" y="124.206" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="-11.303" y="124.206" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="32.512" y="79.2734" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="32.512" y="76.581" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R5" library="rcl" package="R0201" value="1.5kohm" x="40.386" y="73.152" rot="MR0">
+<element name="R5" library="rcl" package="R0201" value="1.5kohm" x="40.386" y="73.152" smashed="yes" rot="MR0">
 <attribute name="OC_NEWARK" value="81C8514" x="-15.494" y="27.432" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="-15.494" y="27.432" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="-15.494" y="27.432" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="42.1894" y="74.8284" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="41.021" y="71.247" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R11" library="rcl" package="R0201" value="10kohm" x="37.973" y="60.325" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="81C8514" x="88.773" y="112.395" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="88.773" y="112.395" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="88.773" y="112.395" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="37.592" y="60.198" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="38.2778" y="61.1632" size="0.762" layer="25" rot="R270"/>
 <attribute name="VALUE" x="39.878" y="59.69" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R15" library="rcl" package="R0201" value="10kohm" x="36.957" y="58.293" rot="R90">
+<element name="R15" library="rcl" package="R0201" value="10kohm" x="36.957" y="58.293" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="81C8514" x="87.757" y="102.743" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="87.757" y="102.743" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="87.757" y="102.743" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="35.941" y="59.2328" size="0.762" layer="25" rot="R270"/>
+<attribute name="VALUE" x="38.862" y="57.658" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="S1" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="Reset Button" x="30.226" y="47.371" rot="R270"/>
-<element name="C14" library="rcl" package="C0402" value="0.1uF" x="33.401" y="56.388" rot="R180"/>
-<element name="C15" library="rcl" package="C0402" value="0.1uF" x="33.401" y="55.118" rot="R180"/>
-<element name="C17" library="rcl" package="C1206" value="47uF" x="34.29" y="53.34" rot="R180"/>
-<element name="C10" library="rcl" package="C1206" value="47uF" x="31.115" y="72.0344" rot="R180"/>
-<element name="R1" library="rcl" package="R0402" value="5.6kohm" x="24.384" y="72.8218" rot="R90"/>
-<element name="R2" library="rcl" package="R0402" value="5.6kohm" x="26.6954" y="73.4822" rot="R180"/>
-<element name="C3" library="rcl" package="C0402" value="220pF" x="26.6954" y="72.1614"/>
-<element name="C6" library="rcl" package="C0603" value="0.1uF" x="27.2034" y="69.723" rot="R270"/>
-<element name="R12" library="rcl" package="R0402" value="430ohm" x="37.338" y="70.485" rot="MR270"/>
-<element name="C19" library="rcl" package="C0402" value="0.1uF" x="35.941" y="70.485" rot="MR90"/>
-<element name="T1" library="transistor" package="SOT23-BEC" value="MMBT3904 NPN" x="40.132" y="70.866" rot="MR90"/>
-<element name="R9" library="rcl" package="R0201" value="270ohms" x="38.354" y="64.389" rot="R180">
+<element name="C14" library="rcl" package="C0402" value="0.1uF" x="33.401" y="56.388" smashed="yes" rot="R180">
+<attribute name="NAME" x="37.0332" y="56.8198" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="34.036" y="58.293" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C15" library="rcl" package="C0402" value="0.1uF" x="33.401" y="55.118" smashed="yes" rot="R180">
+<attribute name="NAME" x="34.4678" y="54.5084" size="1.016" layer="25"/>
+<attribute name="VALUE" x="34.036" y="57.023" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C17" library="rcl" package="C1206" value="47uF" x="34.29" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.5628" y="51.054" size="1.27" layer="25"/>
+<attribute name="VALUE" x="35.56" y="55.88" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C10" library="rcl" package="C1206" value="47uF" x="31.115" y="72.0344" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.004" y="74.295" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="32.385" y="74.5744" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R1" library="rcl" package="R0402" value="5.6kohm" x="24.384" y="72.8218" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.8854" y="73.8886" size="1.016" layer="25" rot="R270"/>
+<attribute name="VALUE" x="26.289" y="72.1868" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R2" library="rcl" package="R0402" value="5.6kohm" x="26.6954" y="73.4822" smashed="yes" rot="R180">
+<attribute name="NAME" x="27.7368" y="72.8218" size="1.016" layer="25" rot="R270"/>
+<attribute name="VALUE" x="27.3304" y="75.3872" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C3" library="rcl" package="C0402" value="220pF" x="26.6954" y="72.1614" smashed="yes">
+<attribute name="NAME" x="25.6794" y="73.9394" size="1.016" layer="25"/>
+<attribute name="VALUE" x="26.0604" y="70.2564" size="1.27" layer="27"/>
+</element>
+<element name="C6" library="rcl" package="C0603" value="0.1uF" x="27.2034" y="69.723" smashed="yes" rot="R270">
+<attribute name="NAME" x="28.7782" y="68.6816" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.2984" y="70.358" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R12" library="rcl" package="R0402" value="430ohm" x="37.338" y="70.485" smashed="yes" rot="MR270">
+<attribute name="NAME" x="38.354" y="71.5264" size="0.762" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="39.243" y="71.12" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C19" library="rcl" package="C0402" value="0.1uF" x="35.941" y="70.485" smashed="yes" rot="MR90">
+<attribute name="NAME" x="35.1536" y="69.2404" size="0.762" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="34.036" y="69.85" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="T1" library="transistor" package="SOT23-BEC" value="MMBT3904 NPN" x="40.132" y="70.866" smashed="yes" rot="MR90">
+<attribute name="NAME" x="42.799" y="68.7578" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="36.957" y="68.961" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R9" library="rcl" package="R0201" value="270ohms" x="38.354" y="64.389" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="81C8514" x="-3.556" y="105.029" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="0402ZD104KAT2A" x="-3.556" y="105.029" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX CORPORATION" x="-3.556" y="105.029" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.5666" y="64.6684" size="1.016" layer="25"/>
+<attribute name="VALUE" x="38.989" y="66.294" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP6" library="SparkFun-Connectors" package="1X03" value="None" x="43.307" y="67.564" rot="R180"/>
-<element name="R14" library="rcl" package="R0402" value="80.6kohm" x="38.862" y="69.85"/>
-<element name="Q1" library="adafruit" package="SM49" value="4.096MHz" x="42.164" y="57.658" rot="R270">
+<element name="JP6" library="SparkFun-Connectors" package="1X03" value="None" x="43.307" y="67.564" smashed="yes" rot="R180">
+<attribute name="NAME" x="43.688" y="66.04" size="1.016" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="44.577" y="70.739" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R14" library="rcl" package="R0402" value="80.6kohm" x="38.862" y="69.85" smashed="yes">
+<attribute name="NAME" x="42.3672" y="70.358" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="38.227" y="67.945" size="1.27" layer="27"/>
+</element>
+<element name="Q1" library="adafruit" package="SM49" value="4.096MHz" x="42.164" y="57.658" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="42.164" y="57.658" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="42.164" y="57.658" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="42.164" y="57.658" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="42.164" y="57.658" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="40.9956" y="58.5216" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="38.1" y="63.373" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="JP4" library="SparkFun-Connectors" package="AUDIO-JACK-3.5MM-SMD" value="" x="29.2608" y="77.7494" rot="MR270">
+<element name="JP4" library="SparkFun-Connectors" package="AUDIO-JACK-3.5MM-SMD" value="" x="29.2608" y="77.7494" smashed="yes" rot="MR270">
 <attribute name="PROD_ID" value="CONN-10353" x="29.2608" y="77.7494" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="JP5" library="SparkFun-Connectors" package="1X04" value="" x="24.638" y="41.656" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.1112" y="52.1462" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="26.162" y="46.7614" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="27.813" y="40.386" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="JP2" library="SparkFun-Connectors" package="1X04" value="" x="35.179" y="41.656" rot="R180"/>
+<element name="JP2" library="SparkFun-Connectors" package="1X04" value="" x="35.179" y="41.656" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.83" y="42.8752" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="36.449" y="44.831" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="JP7" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="43.307" y="73.533" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.9608" y="75.1078" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="40.132" y="74.803" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="24.638" y="67.056" rot="R90"/>
-<element name="JP3" library="SparkFun-Connectors" package="1X04" value="" x="24.638" y="56.896" rot="R90"/>
-<element name="JP8" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="24.638" y="51.816" rot="R90"/>
-<element name="C1" library="rcl" package="C1206" value="47uF" x="28.1178" y="56.5912" rot="MR270"/>
+<element name="JP1" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="24.638" y="67.056" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.0858" y="68.3514" size="1.016" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="27.813" y="65.786" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP3" library="SparkFun-Connectors" package="1X04" value="" x="24.638" y="56.896" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.0256" y="56.642" size="1.016" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="27.813" y="55.626" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP8" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="24.638" y="51.816" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.3304" y="50.6476" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="27.813" y="50.546" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C1" library="rcl" package="C1206" value="47uF" x="28.1178" y="56.5912" smashed="yes" rot="MR270">
+<attribute name="NAME" x="29.21" y="56.8452" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="30.6578" y="57.8612" size="1.27" layer="28" rot="MR270"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1944,8 +2051,7 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="R8" pad="2"/>
 <wire x1="38.1" y1="61.594" x2="38.101" y2="61.594" width="0.254" layer="1"/>
 <wire x1="38.101" y1="61.594" x2="38.608" y2="61.087" width="0.254" layer="1"/>
-<wire x1="38.608" y1="61.087" x2="38.608" y2="59.944" width="0.254" layer="1"/>
-<wire x1="38.608" y1="59.944" x2="38.608" y2="59.69" width="0.254" layer="1"/>
+<wire x1="38.608" y1="61.087" x2="38.608" y2="59.69" width="0.254" layer="1"/>
 <wire x1="38.608" y1="59.69" x2="38.354" y2="59.4868" width="0.254" layer="1"/>
 <wire x1="38.354" y1="59.4868" x2="37.338" y2="59.4868" width="0.254" layer="1"/>
 <wire x1="37.338" y1="59.4868" x2="36.785" y2="59.48" width="0" layer="19" extent="1-1"/>
@@ -2092,11 +2198,11 @@ This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requiremen
 <contactref element="S1" pad="2"/>
 <wire x1="36.785" y1="60.48" x2="35.842" y2="60.48" width="0.254" layer="1"/>
 <wire x1="35.842" y1="60.48" x2="35.306" y2="59.944" width="0.254" layer="1"/>
-<wire x1="35.306" y1="59.944" x2="35.306" y2="59.182" width="0.254" layer="1"/>
+<wire x1="35.306" y1="59.944" x2="35.306" y2="59.2074" width="0.254" layer="1"/>
 <wire x1="32.131" y1="50.165" x2="32.131" y2="44.577" width="0.254" layer="1"/>
 <wire x1="36.957" y1="57.912" x2="36.957" y2="51.816" width="0.254" layer="1"/>
-<wire x1="36.957" y1="58.038" x2="36.45" y2="58.038" width="0.2286" layer="1"/>
-<wire x1="36.45" y1="58.038" x2="35.306" y2="59.182" width="0.2286" layer="1"/>
+<wire x1="36.957" y1="58.038" x2="36.45" y2="58.0634" width="0.2286" layer="1"/>
+<wire x1="36.45" y1="58.0634" x2="35.306" y2="59.2074" width="0.2286" layer="1"/>
 <wire x1="32.131" y1="50.165" x2="35.306" y2="50.165" width="0.254" layer="1"/>
 <wire x1="35.306" y1="50.165" x2="36.957" y2="51.816" width="0.254" layer="1"/>
 <wire x1="36.957" y1="57.912" x2="36.957" y2="58.038" width="0" layer="19" extent="1-1"/>
