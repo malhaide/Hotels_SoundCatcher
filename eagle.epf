@@ -366,11 +366,21 @@ UsedLibrary="/Users/miranai/Documents/eagle/downloaded_libraries/SparkFun-Eagle-
 UsedLibrary="/Users/miranai/Documents/eagle/mirans_library.lbr"
 
 [Win_1]
+Type="Text Editor"
+Loc="8 26 1910 1110"
+State=0
+Number=1
+File="BOM_eagleGen"
+CursorPos="3 12"
+Font="Courier,11,-1,5,50,0,0,0,0,0"
+
+[Win_2]
 Type="Control Panel"
-Loc="305 99 904 498"
-State=2
+Loc="137 62 736 461"
+State=0
 Number=0
 
 [Desktop]
 Screen="3360 1200"
 Window="Win_1"
+Window="Win_2"
