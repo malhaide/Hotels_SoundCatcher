@@ -17627,7 +17627,7 @@ Also, not sure if Sleeve needs to be grounded?</text>
 <wire x1="30.48" y1="7.62" x2="40.64" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCCD" class="0">
+<net name="N$27" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VCCD4"/>
 <wire x1="73.66" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
@@ -17873,7 +17873,7 @@ Also, not sure if Sleeve needs to be grounded?</text>
 <pinref part="JP5" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="GPIO2" class="0">
+<net name="N$21" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO2"/>
 <wire x1="73.66" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
